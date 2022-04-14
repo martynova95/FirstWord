@@ -7,7 +7,7 @@ public class HomeWorkLesson2 {
 
         isPozitiveOrNegative(15);
 
-        System.out.println(isNegative(-546));
+        System.out.println(isNegative(-547));
 
         printWordNTimes("Хорошего дня!",2);
 
