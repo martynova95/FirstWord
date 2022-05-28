@@ -6,7 +6,7 @@ import java.util.Collection;
 
 public class Box<T extends Fruit> {
 
-    private ArrayList<T> list; //= new ArrayList<>();
+    private ArrayList<T> list;
 
     public Box() {
         this.list = new ArrayList<>();
@@ -20,25 +20,6 @@ public class Box<T extends Fruit> {
         this.list = list;
     }
 
-    /*public void addFruit(T fruit) {
-        list.add(fruit);
-    }
-
-    public float getWeight() {
-        return list.size() * list.get(0).getWeight();
-    }
-
-    public void pour(Box<T> box) {
-        box.getList().addAll(list);
-        list.clear();
-    }
-
-    @Override
-    public String toString() {
-        return "Box{" +
-                "list=" + list +
-                '}';
-    }*/
 
     public Box(T... fruits) {
         this.list = new ArrayList<>(Arrays.asList(fruits));
